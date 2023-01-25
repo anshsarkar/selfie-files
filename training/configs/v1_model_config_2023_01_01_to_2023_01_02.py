@@ -19,7 +19,7 @@ config.lr = 0.1
 config.verbose = 2000
 config.dali = False
 
-config.rec = "/dbfs/FileStore/ansh_sarkar/training_face_match_data/training_files/2023_01_01_to_2023_01_02/train_2023_01_01_to_2023_01_02.rec"
+config.rec = "/dbfs/FileStore/ansh_sarkar/training_face_match_data/training_files/2023_01_01_to_2023_01_02/"
 config.num_classes = 1462
 config.num_image = 3646
 config.num_epoch = 20

@@ -23,6 +23,6 @@ config.dali = False
 config.rec = "/dbfs/FileStore/ansh_sarkar/training_face_match_data/images/2023_01_01_to_2023_01_02/processed"
 config.num_classes = 1462
 config.num_image = 3585
-config.num_epoch = 20
+config.num_epoch = 5
 config.warmup_epoch = 0
 config.val_targets = ['lfw', 'cfp_fp', "agedb_30"]

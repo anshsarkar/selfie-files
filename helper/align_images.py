@@ -9,7 +9,7 @@ import argparse
 import tensorflow as tf
 import numpy as np
 sys.path.append(os.path.join(os.path.dirname(__file__),'..', ''))
-import facenet
+import facenet.src.facenet as facenet
 import detect_face
 import random
 from time import sleep

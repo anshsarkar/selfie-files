@@ -50,7 +50,7 @@ def main(args):
         nrof_successfully_aligned = 0
         if args.random_order:
             random.shuffle(dataset)
-        for cls in tqdm(dataset, desc='Aligning', total = len(dataset)):
+        for cls in dataset:
             output_class_dir = os.path.join(output_dir, cls.name)
             if not os.path.exists(output_class_dir):
                 os.makedirs(output_class_dir)

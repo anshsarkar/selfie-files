@@ -15,6 +15,7 @@ import detect_face
 import random
 from time import sleep
 import imageio
+import tqdm
 import skimage
 
 
@@ -49,7 +50,7 @@ def main(args):
         nrof_successfully_aligned = 0
         if args.random_order:
             random.shuffle(dataset)
-        for cls in dataset:
+        for cls in tqdm(dataset, desc='Aligning', total = len(dataset)):
             output_class_dir = os.path.join(output_dir, cls.name)
             if not os.path.exists(output_class_dir):
                 os.makedirs(output_class_dir)

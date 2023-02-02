@@ -17,7 +17,7 @@ from time import sleep
 import imageio
 import tqdm
 import skimage
-import tifffile.tifffile.TiffFileError
+from tifffile.tifffile import TiffFileError
 
 
 def main(args):
@@ -65,7 +65,7 @@ def main(args):
                 if not os.path.exists(output_filename):
                     try:
                         img = imageio.imread(image_path)
-                    except (IOError, ValueError, IndexError, tifffile.tifffile.TiffFileError) as e:
+                    except (IOError, ValueError, IndexError, TiffFileError) as e:
                         errorMessage = '{}: {}'.format(image_path, e)
                         print(errorMessage)
                     else:

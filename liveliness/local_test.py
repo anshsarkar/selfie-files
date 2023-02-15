@@ -25,7 +25,7 @@ from eval_kit.client import get_local_image, verify_local_output
 
 logging.basicConfig(level=logging.INFO)
 
-sys.path.append('model')
+sys.path.append('./model')
 ########################################################################################################
 # please change these lines to include your own face detector extending the eval_kit.detector.CelebASpoofDetector base class.
 from predictor import AENetPredictor as CelebASpoofDetector

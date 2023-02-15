@@ -4,7 +4,7 @@ import numpy as np
 import torchvision
 import torch
 
-from models import AENet
+from model.models import AENet
 from ops import ConsensusModule
 
 sys.path.append('..')

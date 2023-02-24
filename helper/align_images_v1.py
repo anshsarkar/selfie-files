@@ -15,7 +15,7 @@ import detect_face
 import random
 from time import sleep
 import imageio
-import tqdm
+from tqdm import tqdm
 import skimage
 from tifffile.tifffile import TiffFileError
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
